@@ -1,4 +1,6 @@
-#Technion Sentintal Anniversary - Computer Science Faculty **
+# Technion Centennial Anniversary - Computer Science Faculty
+The decoder presented in this git is based on our Nature Machine Intelligence paper [link](https://www.nature.com/articles/s42256-025-01003-z)
+
 
 
 This repository includes the methods that were used in the work.

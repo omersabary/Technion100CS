@@ -10,14 +10,14 @@ This repository includes the methods that were used in the work.
 ###The repository includes the following folders.
 
 1. CPL - Implementation of the CPL algorithm.
-2. ONT's protocol that was used for sequencing.
+2. ONT's protocol that was used for sequencing [link to pdf](https://github.com/omersabary/Technion100CS/blob/main/ligation-sequencing-amplicons-sqk-lsk114-document-document-NanoporeProtocol-MinION-en-ACDE_9163_v114_revX_09May2025-38.pdf)
 4. Encoder_Decoder - Implemenation of our encoding and decoding algorithms.  
 5. Data Utilities - Scripts that are used to parse and read our data.  
 
 ## Full End-to-End Retrieval Pipeline
 
 To run the retrieval pipeline please use the following instructions.
-1. Sequence you data according to ONT protocol, the sample include 200fmols of DNA, and should be eluted with 5 ul of water. After the elution of the sample with 5 ul of water, you can follow nanopore's protocol.
+1. Sequence you data according to ONT protocol, the sample include 200fmols of DNA, and should be eluted with 5 ul of water. After the elution of the sample with 5 ul of water, you can follow nanopore's protocol. [link to pdf](https://github.com/omersabary/Technion100CS/blob/main/ligation-sequencing-amplicons-sqk-lsk114-document-document-NanoporeProtocol-MinION-en-ACDE_9163_v114_revX_09May2025-38.pdf)
 2. Following the nanopore sequencing and basecalling of your data, the next step is to perform clustering and reconstruction. This can be done by running the scripts CombinedScript2.py and then parserEvya.py that can be both found in the folder "Decoding" in this repository. Thess scripts includes primer trimming and preprocessing of the reads that are obtained from sequencing, and also binning them according to their predefined indices.
 3. Next, you should run the CPL algorithm, to do so you need to compile all the cpp files that can be found in the "CPL" folder (listed under the "Decoding" folder). Compilation can be done using the makefile.  (see more instructions below)
 
